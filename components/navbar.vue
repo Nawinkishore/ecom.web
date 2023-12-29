@@ -23,10 +23,12 @@
                     <div class="bg-black h-3 w-3 absolute -top-1 -right-1 rounded-full text-white text-[8px] flex justify-center items-center">1</div>
                 </div>
             </Nuxtlink>  
-            <div class="relative">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <div class="bg-black h-3 w-3 absolute -top-1 -right-1 rounded-full text-white text-[8px] flex justify-center items-center">1</div>   
-            </div>
+            <NuxtLink to="/cart" >
+                <div class="relative">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="bg-black h-3 w-3 absolute -top-1 -right-1 rounded-full text-white text-[8px] flex justify-center items-center">1</div>   
+                </div>
+            </NuxtLink>
         </div>
     </div>
     <div class="h-screen fixed top-0 w-full bg-black/80 overflow-hidden z-10 lg:hidden transition-[0.3s]"
