@@ -2,7 +2,7 @@
    <div>
     <div class="h-20 w-full shadow-lg flex items-center justify-between p-5">
         <div>
-            <img src="https://preview.colorlib.com/theme/ashion/img/logo.png" alt="">
+            <NuxtLink :to="list[0].route"><img src="https://preview.colorlib.com/theme/ashion/img/logo.png" alt=""></NuxtLink>
         </div>
         <div class="h-8 w-8 border-2 border-black flex justify-center items-center lg:hidden">
             <i class="fa-solid fa-bars"
