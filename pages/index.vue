@@ -82,9 +82,21 @@
 
               <!-- New products -->
             <section>
-              <div >
-  
-               <div v-for="n in 5" :key="n">
+              <div  class="p-20">
+               <div class="flex justify-around items-center w-full">
+                <div><h1 class="font-bold text-2xl">New Products</h1></div>
+                <div>
+                  <ul class="flex items-center justify-center gap-5 font-semibold text-1xl underline decoration-2 decoration-red-600 underline-offset-8">
+                    <li>Women</li>
+                    <li>Men</li>
+                    <li>Kid</li>
+                    <li>Cosmetics</li>
+                    <li>Accessories</li>
+
+                  </ul>
+                </div>
+               </div>
+               <div v-for="n in 5" :key="n" class="md:grid grid-flow-col ">
                 <div class=" mx-auto relative m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
                 
                   <a href="#">
