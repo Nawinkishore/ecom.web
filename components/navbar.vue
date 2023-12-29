@@ -15,12 +15,14 @@
                 </li>
             </ul> 
         </div>
-        <div class="hidden lg:flex justify-center items-center gap-3">
+        <div class="hidden lg:flex justify-center items-center gap-3 cursor-pointer">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <div class="relative">
-                <i class="fa-solid fa-heart"></i>
-                <div class="bg-black h-3 w-3 absolute -top-1 -right-1 rounded-full text-white text-[8px] flex justify-center items-center">1</div>
-            </div>
+            <NuxtLink to="/wishlist" >
+                <div class="relative">
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="bg-black h-3 w-3 absolute -top-1 -right-1 rounded-full text-white text-[8px] flex justify-center items-center">1</div>
+                </div>
+            </Nuxtlink>  
             <div class="relative">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <div class="bg-black h-3 w-3 absolute -top-1 -right-1 rounded-full text-white text-[8px] flex justify-center items-center">1</div>   
