@@ -79,7 +79,7 @@ export default{
                 route:"/Product",
             },
             {
-                name:"categories",
+                name:"Categories",
                 route:"/Categories",
             }
             
