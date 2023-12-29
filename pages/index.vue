@@ -174,13 +174,16 @@
               <!-- New products -->
 <!-- swiper /offer -->
             <section>
-              <div class="h-[200px] w-full bg-rose-300 p-10">
-                <div class="flex flex-col justify-center items-center">
+              <div class="h-[200px] w-full bg-rose-300 p-10 swiper offerswiper">
+               <div class="swiper-wrapper">
+                <div v-for="n in 5" :key="n"
+                class="flex flex-col justify-center items-center swiper-slide">
                   <h1 class="text-2xl font-medium">Get offers</h1>
                   <p class="mt-3 font-bold text-red-600">50% offer!</p>
                   <p class="mt-3 font-bold text-white">Shop Now</p>
 
                 </div>
+               </div>
               </div>
             </section>
 <!-- swiper /offer -->
@@ -197,8 +200,13 @@ export default{
     };
     
   },
-  mounted(){
-    this.swipper.offerswipper = new Swiper(".mySwiper", {});
-  }
+  mounted() {
+    this.swipper.offerswiper = new window.Swiper(".offerswiper", {
+      autoplay:{
+        delay:1000,
+        disableonInteraction:false,
+      }
+    });
+  },
 }
 </script>
