@@ -1,5 +1,6 @@
 <template>
    <div>
+    
     <div class="h-20 w-full shadow-lg flex items-center justify-between p-5">
         <div>
             <NuxtLink :to="list[0].route"><img src="https://preview.colorlib.com/theme/ashion/img/logo.png" alt=""></NuxtLink>
