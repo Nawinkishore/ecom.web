@@ -27,7 +27,7 @@
             </div>
         </div>
     </div>
-    <div class="h-screen fixed top-0 w-full bg-black/80 overflow-hidden lg:hidden transition-[0.3s]"
+    <div class="h-screen fixed top-0 w-full bg-black/80 overflow-hidden z-10 lg:hidden transition-[0.3s]"
     :class="issidebaropen?'-left-0':'-left-full'">
         <div class="bg-white h-screen max-w-[270px] p-5">
             <div class="flex justify-end items-center">
@@ -50,6 +50,13 @@
             <div class="mt-5">
                 <img src="https://preview.colorlib.com/theme/ashion/img/logo.png" alt="">
             </div>
+            <div>
+                <ul class="flex flex-col justify-center items-start gap-3 mt-5 font-semibold">
+                    <li v-for="(item,index) in list" :key="index">
+                        <NuxtLink :to="item.route">{{item.name}}</NuxtLink>
+                    </li>
+                </ul> 
+            </div>
         </div>
     </div>
    </div>
@@ -64,12 +71,16 @@ export default{
                 route:'/',
             },
             {
-                name:'shop',
-                route:'/shop',
-            },
-            {
                 name:'Contact',
                 route:'/contact',
+            },
+            {
+                name:"Product",
+                route:"/Product",
+            },
+            {
+                name:"categories",
+                route:"/Categories",
             }
             
         ],
