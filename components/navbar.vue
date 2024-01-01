@@ -52,15 +52,21 @@
                     <div class="bg-black h-3 w-3 absolute -top-1 -right-1 rounded-full text-white text-[8px] flex justify-center items-center">1</div>   
                 </NuxtLink>
             </div>
-            <div class="mt-5">
-                <img src="https://preview.colorlib.com/theme/ashion/img/logo.png" alt="">
-            </div>
             <div>
-                <ul class="flex flex-col justify-center items-start gap-3 mt-5 font-semibold">
-                    <li v-for="(item,index) in list" :key="index">
-                        <NuxtLink :to="item.route">{{item.name}}</NuxtLink>
-                    </li>
-                </ul> 
+                <div class="mt-5">
+                    <img src="https://preview.colorlib.com/theme/ashion/img/logo.png" alt="">
+                </div>
+                <div>
+                    <ul class="flex flex-col justify-center items-start gap-3 mt-5 font-semibold">
+                        <li v-for="(item,index) in list" :key="index">
+                            <NuxtLink :to="item.route">{{item.name}}</NuxtLink>
+                        </li>
+                    </ul> 
+                </div>
+                <div class="flex justify-around items-center mt-5 ">
+                   <div class="w-20 h-10 bg-slate-500 p-5 flex justify-center items-center"><NuxtLink to="/login">Login</NuxtLink></div> 
+                    <div class="w-20 h-10 bg-slate-500 p-5 flex justify-center items-center "><NuxtLink to="/register">SignUp</NuxtLink> </div>
+                </div>
             </div>
         </div>
     </div>

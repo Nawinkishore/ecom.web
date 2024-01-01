@@ -14,5 +14,9 @@
     "nuxt": "^3.9.0",
     "vue": "^3.3.13",
     "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@nuxt-alt/http": "^1.7.4",
+    "cors": "^2.8.5"
   }
 }
