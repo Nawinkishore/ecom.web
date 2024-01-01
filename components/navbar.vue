@@ -43,14 +43,14 @@
             </div>
             <div class="flex justify-around items-center  mt-5">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <div class="relative">
+                <NuxtLink to="/wishlist" class="relative">
                     <i class="fa-solid fa-heart"></i>
                     <div class="bg-black h-3 w-3 absolute -top-1 -right-1 rounded-full text-white text-[8px] flex justify-center items-center">1</div>
-                </div>
-                <div class="relative">
+                </NuxtLink>
+                <NuxtLink to="/cart" class="relative">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <div class="bg-black h-3 w-3 absolute -top-1 -right-1 rounded-full text-white text-[8px] flex justify-center items-center">1</div>   
-                </div>
+                </NuxtLink>
             </div>
             <div class="mt-5">
                 <img src="https://preview.colorlib.com/theme/ashion/img/logo.png" alt="">

@@ -1,5 +1,5 @@
     <template>
-        <div>
+        <div class="overflow-hidden">
             <navbar />
             <!-- Categories -->
             <section>
@@ -83,7 +83,7 @@
               <!-- New products -->
             <section class=" dark:bg-gray-900 ">
               <div  class="p-20">
-               <div class="flex justify-around items-center w-full text-white">
+               <div class=" flex flex-col md:flex justify-around items-center w-full text-white">
                 <div><h1 class="font-bold text-2xl ">New Products</h1></div>
                 <div>
                   <ul class="flex items-center justify-center gap-5 font-semibold text-1xl underline decoration-2 decoration-red-600 underline-offset-8">
@@ -189,7 +189,7 @@
               <div class="h-[200px] w-full bg-rose-300 p-10 swiper offerswiper">
                <div class="swiper-wrapper">
                 <div v-for="n in 5" :key="n"
-                class="flex flex-col justify-center items-center swiper-slide">
+                class="flex flex-col justify-center  items-center swiper-slide">
                   <h1 class="text-2xl font-medium">Best Collections</h1>
                   <p class="mt-3 font-bold ">Get 50% offer on your first order  !</p>
                   <p class="mt-3 font-bold underline decoration-2 decoration-red-500 underline-offset-8">Shop Now</p>
